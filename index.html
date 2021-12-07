@@ -32,34 +32,78 @@
             <div class="card card-3">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    <h2 class="title">Registration Info</h2>
+                    <center> <h2 class="title"> Registro de Datos Alumnos de Nuevo Ingreso (enero 2021) </h2> </center>
+                    
+                    <fieldset>
                     <form method="POST">
+                        <legend>Identidad</legend>
                         <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Name" name="name">
+                            <input class="input--style-3" type="text" placeholder="Nombre" name="Nombre">
                         </div>
+
                         <div class="input-group">
-                            <input class="input--style-3 js-datepicker" type="text" placeholder="Birthdate" name="birthday">
+                            <input class="input--style-3" type="text" placeholder="Apellido Paterno" name="Apellido_P">
+                        </div>
+
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Apellido Materno" name="Apellido_M">
+                        </div>
+
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Boleta" name="Boleta">
+                        </div>
+
+                        <div class="input-group">
+                            <input class="input--style-3 js-datepicker" type="text" placeholder="Fecha de nacimiento" name="birthday">
                             <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                         </div>
+                        
                         <div class="input-group">
-                            <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="gender">
-                                    <option disabled="disabled" selected="selected">Gender</option>
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                    <option>Other</option>
-                                </select>
-                                <div class="select-dropdown"></div>
-                            </div>
+                            <input class="input--style-3" type="text" placeholder="CURP" name="Curp">
                         </div>
+                    </fieldset><br>
+
+                    <fieldset>
+                        <legend>Contacto</legend>
+
+                        <div class="input-group">
+                            <input class="input--style-3" type="email" placeholder="Calle y Número" name="direccion">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="email" placeholder="Colonia" name="Colonia">
+                        </div>                  
+                        <label for="alcaldia">Alcaldía:</label>
+                        <select class = "form-select" name="alcaldia" id="alcaldia">
+                                <option value="alvaro_obregon">Álvaro Obregón</option>
+                                <option value="azcapotzalco">Azcapotzalco</option>
+                                <option value="benito_juárez">Benito Juárez</option>
+                                <option value="coyoacan">Coyoacán</option>
+                                <option value="cuajimalpa">Cuajimalpa</option>
+                                <option value="cuauhtemoc">Cuauhtémoc</option>
+                                <option value="gustavo_a_madero">Gustavo A. Madero</option>
+                                <option value="iztacalco">Iztacalco</option>
+                                <option value="iztapalapa">Iztapalapa</option>
+                                <option value="magdalena_contreras">Magdalena Contreras</option>
+                                <option value="miguel_hidalgo">Miguel Hidalgo</option>
+                                <option value="milpa_alta">Milpa Alta</option>
+                                <option value="tlahuac">Tláhuac</option>
+                                <option value="tlalpan">Tlalpan</option>
+                                <option value="venustiano_carranza">Venustiano Carranza</option>
+                                <option value="xochimilco">Xochimilco</option>
+            </select><br><br>
+                        <div class="input-group">
+                            <input class="input--style-3" type="email" placeholder="Codigo Postal" name="codigo">
+                        </div> 
                         <div class="input-group">
                             <input class="input--style-3" type="email" placeholder="Email" name="email">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Phone" name="phone">
+                            <input class="input--style-3" type="text" placeholder="Telefono" name="phone">
                         </div>
+                    </fieldset>
+                    
                         <div class="p-t-10">
-                            <button class="btn btn--pill btn--green" type="submit">Submit</button>
+                            <button class="btn btn--pill btn--green" type="submit">Enviar</button>
                         </div>
                     </form>
                 </div>
